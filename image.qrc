@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>startscreen.jpg</file>
+        <file>bg.png</file>
+        <file>don.png</file>
+        <file>background.png</file>
+        <file>target.png</file>
+        <file>kat.png</file>
+        <file>score.png</file>
+    </qresource>
+</RCC>

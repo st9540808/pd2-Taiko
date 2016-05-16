@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>723</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>120</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>120</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>exit</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>731</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>false</bool>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/image/startscreen.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+    <property name="textInteractionFlags">
+     <set>Qt::LinksAccessibleByMouse</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>731</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/image/bg.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="timerLcd">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>40</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>141</y>
+      <width>731</width>
+      <height>111</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="score">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>40</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>graphicsView</zorder>
+   <zorder>label_2</zorder>
+   <zorder>timerLcd</zorder>
+   <zorder>score</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>524</x>
+     <y>141</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>544</x>
+     <y>620</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>271</x>
+     <y>269</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>218</x>
+     <y>135</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>521</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>207</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>211</x>
+     <y>143</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

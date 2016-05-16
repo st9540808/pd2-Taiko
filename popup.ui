@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>popup</class>
+ <widget class="QDialog" name="popup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>445</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLCDNumber" name="lcdNumber">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>211</width>
+     <height>71</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>211</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="image.qrc">:/image/score.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>250</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>restart</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>250</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
